@@ -19,7 +19,7 @@
 
     header div {
       flex: 1;
-      padding: 10px;
+      padding: 0px;
           text-align: center;
     }
 
@@ -44,13 +44,14 @@
         .custom-input {
             position: relative;
             display: inline-block;
-           width: 90%;
           margin-left: auto;
           margin-right: auto;
+          margin-top: 10px;
+          margin-bottom: 10px;
         }
 
         .custom-input input {
-            width: 90%;
+            width: 300px;
             padding: 10px;
             border: 2px solid #ccc;
             border-radius: 12px;
@@ -58,19 +59,29 @@
             margin-left: auto;
           margin-right: auto;
         }
+    
+          input:focus {
+              border-radius: 12px 12px 0px 0px !important;
+        }
+
+      input:hover {
+              border-radius: 12px 12px 0px 0px !important;
+        }
 
         .dropdown {
             display: none;
             position: absolute;
             top: 100%;
             left: 0;
-            width: 200px;
-            border: 2px solid #ccc;
+            width: 322px;
+          margin-top: 0px;
+            border: 1px solid #576579;
             border-top: none;
-            border-radius: 0 0 12px 12px;
+            border-radius: 0px 0px 12px 12px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1;
+          box-shadow: 0 112px 228px rgba(55,73,81,.12),0 25.0167px 50.9268px rgba(55,73,81,.0715),0 7.4481px 15.1622px rgba(55,73,81,.0485);
         }
 
         .dropdown-item {
