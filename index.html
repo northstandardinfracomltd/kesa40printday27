@@ -20,6 +20,7 @@
     header div {
       flex: 1;
       padding: 10px;
+          text-align: center;
     }
 
     main {
@@ -43,14 +44,19 @@
         .custom-input {
             position: relative;
             display: inline-block;
+           width: 90%;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .custom-input input {
-            width: 200px;
+            width: 90%;
             padding: 10px;
             border: 2px solid #ccc;
             border-radius: 12px;
             outline: none;
+            margin-left: auto;
+          margin-right: auto;
         }
 
         .dropdown {
@@ -72,6 +78,7 @@
             cursor: pointer;
             user-select: none;
           color: black;
+              text-align: left;
         }
 
         .dropdown-item:hover {
@@ -99,6 +106,7 @@
         border-bottom: 0px solid transparent !important;
         background: #fff;
         border-radius: 0px 0px 5px 5px;
+        text-align: left;
 }
     
     
@@ -107,12 +115,26 @@
           text-align: center;
 }
     
-    imgitem{
+    .imgitem {
     background: red;
           text-align: center;
+      min-height: 100px;
+      max-height: 100px;
+      
 }
     
-
+.imgpopular {
+          text-align: center;
+      min-height: 20px;
+      max-height: 20px;
+      
+}
+    
+    .itempopular {
+      font-size: 12px;
+      padding-top: 10px;
+      
+}
     
     
   </style>
@@ -131,7 +153,7 @@
 <div class="custom-input" id="customInput" onmouseover="showDropdown()" onmouseout="hideDropdown()">
     <input type="text" placeholder="Démo" oninput="filterResults()" id="inputField" onclick="showDropdown()">
     <div class="dropdown" id="dropdown">
-        <div class="dropdown-item" onclick="addItem('crabe')">crabe</div>
+        <div class="dropdown-item" onclick="addItem('crabe')"><p class="itempopular" >Titre</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
         <div class="dropdown-item" onclick="addItem('orange')">orange</div>
         <div class="dropdown-item" onclick="addItem('bleu')">bleu</div>
         <div class="dropdown-item" onclick="addItem('ordinateur')">ordinateur</div>
