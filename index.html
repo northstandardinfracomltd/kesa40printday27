@@ -7,6 +7,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: #1b73e8;
     }
 
     
@@ -254,6 +255,12 @@ box-shadow: 0 0 0px 4px #008eff38;
 }
     
     
+        .coverly {
+background: white;
+}
+    
+    
+    
 
     .navbtn {
 font-family: "norte1" !important;
@@ -292,8 +299,68 @@ max-width: 200px;
       margin-right: auto !important;
       text-align: left !important;
 }
-   
+            .sticky-footer {
+      background-color: #ffd000;
+box-shadow: rgb(222 222 222 / 62%) 0px 6px 25px;
+           padding: 10px 15px 10px 15px;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+      z-index: 100;
+    }
     
+    
+         
+             .grid-containerfoot {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            padding: 0px;
+        }
+
+        .left-columnfoot {
+            text-align: left;
+        }
+
+.right-columnfoot {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .buttonfoot {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #ee0007;
+    color: #fff;
+    border: none;
+    padding-top: 18px;
+    padding-bottom: 17px;
+          padding-left: 22px;
+          padding-right: 22px;
+ margin-top: 13px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    border-radius: 17px;
+    z-index: 2;
+    font-family: "saasduoPAR" !important;
+          text-decoration: none;
+}
+     
+     
+             .scdbtn {
+    background-color: #1b1b20;
+               margin-right: 22px !important;
+}
+    
+         .cloudCustomersimg {
+    width: 100%;
+    max-width: 410px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: -9px;
+    margin-left: 7px;
+}
 
     
     
@@ -303,7 +370,7 @@ max-width: 200px;
 
         <div class="marketing">Impressions et assemblages commerciaux<a href="#" class="contact-btn">Formulaire de contact</a> </div>
 
-  
+   <div class="coverly">
   <header>
     <div>
     
@@ -425,6 +492,30 @@ max-width: 200px;
 
   
   </main>
+     
+     
+     
+  <div class="sticky-footer" id="stickyFooter">
+    
+    
+    <div class="grid-containerfoot">
+        <div class="left-columnfoot">
+            <p class="txtfoot">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img class="cloudCustomersimg" src="https://cdn.glitch.global/6911e275-79dc-4697-af64-b308ef13c90b/happy-customers.3abd905fe8d7b8555194b183a241defb71af2e49133597006148afc0b10844a2.png?v=1702744912649" alt="Image 3">
 
+      </div>
+        <div class="right-columnfoot">
+            <a href="#" class="buttonfoot scdbtn">Apply to our jobs</a>
+            <a href="#" class="buttonfoot">Contact CloudFiat</a>
+        </div>
+    </div>
+
+    
+    
+  </div>
+
+     
+     
+  </div>
 </body>
 </html>
