@@ -74,11 +74,12 @@
         }
 
         .dropdown-item {
-            padding: 10px;
+            padding: 0px;
             cursor: pointer;
             user-select: none;
           color: black;
               text-align: left;
+          display: flex;
         }
 
         .dropdown-item:hover {
@@ -125,14 +126,26 @@
     
 .imgpopular {
           text-align: center;
-      min-height: 20px;
-      max-height: 20px;
+      min-height: 15px;
+      max-height: 15px;
+  margin-top: 16px;
+    margin-left: 5px;
+      
+}
+    
+        
+.imgicon {
+          text-align: center;
+      min-height: 15px;
+      max-height: 15px;
+  margin-top: 16px;
+    margin-left: 5px;
       
 }
     
     .itempopular {
-      font-size: 12px;
-      padding-top: 10px;
+      font-size: 18px;
+      padding-bottom: 0px;
       
 }
     
@@ -153,7 +166,7 @@
 <div class="custom-input" id="customInput" onmouseover="showDropdown()" onmouseout="hideDropdown()">
     <input type="text" placeholder="Démo" oninput="filterResults()" id="inputField" onclick="showDropdown()">
     <div class="dropdown" id="dropdown">
-        <div class="dropdown-item" onclick="addItem('crabe')"><p class="itempopular" >Titre</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('crabe')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgicon"><p class="itempopular" >Titre</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
         <div class="dropdown-item" onclick="addItem('orange')">orange</div>
         <div class="dropdown-item" onclick="addItem('bleu')">bleu</div>
         <div class="dropdown-item" onclick="addItem('ordinateur')">ordinateur</div>
