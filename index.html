@@ -27,6 +27,10 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       padding: 20px;
+      max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
     }
 
     main div {
@@ -36,7 +40,6 @@
     }
     
     
-
         .custom-input {
             position: relative;
             display: inline-block;
@@ -73,6 +76,26 @@
         .dropdown-item:hover {
             background-color: #f0f0f0;
         }
+
+
+        .lancelot {
+            display: block;
+            margin: 10px;
+            padding: 0px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    
+      .divider {
+    border-top: 1px solid #ccc;
+        border-left: 0px solid transparent !important;
+        border-right: 0px solid transparent !important;
+        border-bottom: 0px solid transparent !important;
+}
     
   </style>
 </head>
@@ -85,7 +108,7 @@
     
 
 <div class="custom-input" id="customInput" onmouseover="showDropdown()" onmouseout="hideDropdown()">
-    <input type="text" placeholder="Démo" onfocus="showDropdown()" onblur="hideDropdown()" id="inputField" onclick="showDropdown()">
+    <input type="text" placeholder="Démo" oninput="filterResults()" id="inputField" onclick="showDropdown()">
     <div class="dropdown" id="dropdown">
         <div class="dropdown-item" onclick="addItem('crabe')">crabe</div>
         <div class="dropdown-item" onclick="addItem('orange')">orange</div>
@@ -100,6 +123,7 @@
     </div>
 </div>
 
+
 <script>
     function showDropdown() {
         document.getElementById("dropdown").style.display = "block";
@@ -112,6 +136,21 @@
     function addItem(item) {
         document.getElementById("inputField").value = item;
         hideDropdown();
+        filterResults();
+    }
+
+    function filterResults() {
+        var searchTerm = document.getElementById("inputField").value.toLowerCase();
+        var results = document.getElementsByClassName("lancelot");
+
+        for (var i = 0; i < results.length; i++) {
+            var content = results[i].innerText.toLowerCase();
+            if (content.includes(searchTerm)) {
+                results[i].classList.remove("hidden");
+            } else {
+                results[i].classList.add("hidden");
+            }
+        }
     }
 </script>
 
@@ -121,17 +160,16 @@
   </header>
 
   
-  ///Parfait, maintenant, dans mon code j'ai 9 div, je veux que ce champ créé ensemble filtre par mots clés les divs. Par 
   <main>
-    <div class="lancelot" id="result1">Contenu 1</div>
-    <div class="lancelot" id="result2">Contenu 2</div>
-    <div class="lancelot" id="result3">Contenu 3</div>
-    <div class="lancelot" id="result4">Contenu 4</div>
-    <div class="lancelot" id="result5">Contenu 5</div>
-    <div class="lancelot" id="result6">Contenu 6</div>
-    <div class="lancelot" id="result7">Contenu 7</div>
-    <div class="lancelot" id="result8">Contenu 8</div>
-    <div class="lancelot" id="result9">Contenu 9</div>
+    <div class="lancelot" id="result1"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p></div></div>
+    <div class="lancelot" id="result2"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p></div></div>
+    <div class="lancelot" id="result3"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p></div></div>
+    <div class="lancelot" id="result4"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p></div></div>
+    <div class="lancelot" id="result5"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p></div></div>
+    <div class="lancelot" id="result6"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p></div></div>
+    <div class="lancelot" id="result7"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p></div></div>
+    <div class="lancelot" id="result8"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p></div></div>
+    <div class="lancelot" id="result9"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p></div></div>
   </main>
 
 </body>
