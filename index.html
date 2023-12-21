@@ -25,7 +25,7 @@
     main {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
+      gap: 0px;
       padding: 20px;
       max-width: 1200px;
     margin-left: auto;
@@ -85,6 +85,7 @@
             padding: 0px;
             border: 1px solid #ccc;
             border-radius: 5px;
+          background: #eee;
         }
 
         .hidden {
@@ -96,6 +97,8 @@
         border-left: 0px solid transparent !important;
         border-right: 0px solid transparent !important;
         border-bottom: 0px solid transparent !important;
+        background: #fff;
+        border-radius: 0px 0px 5px 5px;
 }
     
     
@@ -103,6 +106,13 @@
     background: red;
           text-align: center;
 }
+    
+    imgitem{
+    background: red;
+          text-align: center;
+}
+    
+
     
     
   </style>
@@ -172,22 +182,36 @@
 
   
   <main>
-    <div class="lancelot" id="result1"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p></div></div>
-    <div class="lancelot" id="result2"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p></div></div>
-    <div class="lancelot" id="result3"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p></div></div>
-    <div class="lancelot" id="result4"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p></div></div>
-    <div class="lancelot" id="result5"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p></div></div>
-    <div class="lancelot" id="result6"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p></div></div>
-    <div class="lancelot" id="result7"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p></div></div>
-    <div class="lancelot" id="result8"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p></div></div>
-    <div class="lancelot" id="result9"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p></div></div>
-    <div class="lancelot" id="result10"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p></div></div>
-   <div class="lancelot" id="result11"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p></div></div>
-    <div class="lancelot" id="result12"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p></div></div>
-    <div class="lancelot" id="result13"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p></div></div>
-    <div class="lancelot" id="result14"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p></div></div>
-    <div class="lancelot" id="result15"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p></div></div>
-    
+<div class="lancelot" id="result1"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result2"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result3"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result4"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result5"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result6"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result7"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result8"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result9"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result10"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result11"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result12"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result13"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result14"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result15"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result16"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result17"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result18"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result19"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result20"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result21"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result22"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result23"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result24"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result25"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result26"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result27"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result28"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result29"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a></div></div>
+<div class="lancelot" id="result30"><img src="image2.jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a></div></div>
   
   </main>
 
