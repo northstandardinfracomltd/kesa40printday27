@@ -29,12 +29,12 @@
       border-bottom: 1px solid #e2e2e2;
                 font-family: "norte1" !important;
           font-weight: 500;
+      z-index: 1111;
     }
 
     header div {
       flex: 1;
       padding: 0px;
-          text-align: center;
                 font-family: "norte1" !important;
           font-weight: 500;
     }
@@ -157,8 +157,10 @@ box-shadow: 0 112px 228px rgba(55,73,81,.12),0 25.0167px 50.9268px rgba(55,73,81
     
     
         .marketing {
-  background: linear-gradient(89.84deg,rgba(230,36,174,.15) .34%,rgba(94,58,255,.15) 16.96%,rgba(10,136,255,.15) 34.66%,rgba(75,191,80,.15) 50.12%,rgba(137,206,0,.15) 66.22%,rgba(239,183,0,.15) 82%,rgba(246,73,0,.15) 99.9%);
+background: #1b73e8;
           text-align: center;
+              height: 40px;
+    padding-top: 20px;
 }
     
     .imgitem {
@@ -238,12 +240,20 @@ font-weight: 500;
 font-size: 15px;
 letter-spacing: 0px;
 background: blue;
-border-radius: 14px;
+border-radius: 12px;
 color: white;
 text-decoration: none;
 padding: 9px 12px 9px 12px;
 margin-bottom: 25px;
 }
+    
+    
+    
+    .buybtn:hover {
+box-shadow: 0 0 0px 4px #008eff38;
+}
+    
+    
 
     .navbtn {
 font-family: "norte1" !important;
@@ -257,6 +267,9 @@ text-decoration: none;
 padding: 9px 12px 9px 12px;
 margin-bottom: 5px;
       margin-top: 5px;
+          display: block;
+    width: 165px;
+      margin-left: auto;
 }
     
 .cost {
@@ -274,6 +287,16 @@ cursor: default;
 }
     
     
+    .menulogo {
+max-width: 200px;
+      margin-right: auto !important;
+      text-align: left !important;
+}
+   
+    
+
+    
+    
   </style>
 </head>
 <body>
@@ -282,7 +305,14 @@ cursor: default;
 
   
   <header>
-    <div>Colonne 1</div>
+    <div>
+    
+    
+    
+    <img class="menulogo" src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/svg-gobbler%20(2).svg?v=1703198007755" alt="Logo">
+    
+    
+    </div>
     <div>
     
     
@@ -345,7 +375,7 @@ cursor: default;
     </div>
     <div>
     
-    <a href="#" class="navbtn">Options de contact</a> <a href="#" class="navbtn">Connexion</a> 
+    <a href="#" class="navbtn">Connexion</a> 
       
     </div>
   </header>
