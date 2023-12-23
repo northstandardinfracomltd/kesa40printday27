@@ -260,6 +260,7 @@ border-top: none;
 border-radius: 0px 0px 12px 12px;
 background-color: #28044A;
 z-index: 1;
+cursor: pointer !important;
         }
 
 .dropdown-item {
@@ -268,7 +269,7 @@ font-size: 18px;
 font-family: "senseistandard" !important;
 white-space: nowrap;
 letter-spacing: 0px;
-cursor: pointer;
+cursor: pointer !important;
 user-select: none;
 text-align: left;
 display: flex;
@@ -284,6 +285,7 @@ border: 1px solid #28044A;
 .dropdown-item:hover {
 background-color: #300954;
 border: 1px solid #370c5f;
+cursor: pointer !important;
 }
 
 
@@ -294,7 +296,7 @@ padding: 0px;
 border: 1.2px solid #3d3556;
 border-radius: 12px;
 background: #28044A;
-        }
+}
     
     
     
@@ -323,8 +325,24 @@ min-height: 170px;
 .marketing {
 background: #28044A;
 text-align: center;
-height: 40px;
 padding-top: 20px;
+font-family: "senseistandard" !important;
+font-size: 18px;
+color: #c8c1de;
+cursor: default;
+letter-spacing: 0px;
+line-height: 30px;
+margin-top: 10px;
+margin-bottom: 28px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.contact-btn {
+text-decoration: none;
+color: #7CF178 !important;
+letter-spacing: 0px;
+cursor: pointer !important;
 }
     
 .imgitem {
@@ -545,7 +563,7 @@ box-shadow: rgb(222 222 222 / 62%) 0px 6px 25px;
 .right-columnfoot {
             display: flex;
             justify-content: flex-end;
-            align-items: center;
+            align-items: right;
         }
 
         .buttonfoot {
@@ -574,6 +592,8 @@ box-shadow: rgb(222 222 222 / 62%) 0px 6px 25px;
 }
     
          .cloudCustomersimg {
+           margin-left: auto;
+           text-align: right;
     width: 100%;
     max-width: 410px;
     margin-right: auto;
@@ -624,7 +644,7 @@ font-size: 15px;
 </head>
 <body>
 
-        <div class="marketing">Impressions et assemblages commerciaux<a href="#" class="contact-btn">Formulaire de contact</a> </div>
+        <div class="marketing">Impressions et assemblages commerciaux <a href="#" class="contact-btn">Formulaire de contact</a> </div>
 
    <div class="coverly">
   <header>
@@ -702,7 +722,7 @@ font-size: 15px;
       
     </div>
   </header>
-
+<br><br><br>
   
   <main>
 <div class="lancelot" id="result1"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
@@ -789,13 +809,15 @@ font-size: 15px;
     
     <div class="grid-containerfoot">
         <div class="left-columnfoot">
-            <p class="txtfoot">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <img class="cloudCustomersimg" src="https://cdn.glitch.global/6911e275-79dc-4697-af64-b308ef13c90b/happy-customers.3abd905fe8d7b8555194b183a241defb71af2e49133597006148afc0b10844a2.png?v=1702744912649" alt="Image 3">
+            <p class="txtfoot">Trusted by independant, SME and ETI companies</p>
 
       </div>
         <div class="right-columnfoot">
-            <a href="#" class="buttonfoot scdbtn">Apply to our jobs</a>
-            <a href="#" class="buttonfoot">Contact CloudFiat</a>
+          
+          
+                      <p class="txtfoot">Trusted by independant, SME and ETI companies</p>
+
+                  <img class="cloudCustomersimg" src="https://cdn.glitch.global/6911e275-79dc-4697-af64-b308ef13c90b/happy-customers.3abd905fe8d7b8555194b183a241defb71af2e49133597006148afc0b10844a2.png?v=1702744912649" alt="Image 3">
         </div>
     </div>
 
