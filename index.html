@@ -272,12 +272,13 @@ cursor: pointer;
 user-select: none;
 text-align: left;
 display: flex;
-  background-color: #28044A;
+background-color: #28044A;
 border-radius: 12px;
+padding-top: 0px;
+padding-bottom: 0px;
 padding-left: 14px;
 padding-right: 14px;
-  border: 1px solid #28044A;
-
+border: 1px solid #28044A;
         }
 
 .dropdown-item:hover {
@@ -286,62 +287,60 @@ border: 1px solid #370c5f;
 }
 
 
-        .lancelot {
-            display: block;
-            margin: 10px;
-            padding: 0px;
-            border: 1.2px solid #3d3556;
-            border-radius: 12px;
-          background: #28044A;
+.lancelot {
+display: block;
+margin: 10px;
+padding: 0px;
+border: 1.2px solid #3d3556;
+border-radius: 12px;
+background: #28044A;
         }
     
     
     
-    .lancelot:hover {
-    transform: scale(1.03);
-    transition-duration: 0s;
-          box-shadow: 0 0 0px 4px #008eff38;
+.lancelot:hover {
+transform: scale(1.03);
+transition-duration: 0s;
+box-shadow: 0 0 0px 4px #008eff38;
 }
 
-        .hidden {
-            display: none;
-        }
-    
-      .divider {
-    border-top: 1px solid #3d3556;
-        border-left: 0px solid transparent !important;
-        border-right: 0px solid transparent !important;
-        border-bottom: 0px solid transparent !important;
-        background: #28044A;
-        border-radius: 0px 0px 12px 12px;
-        text-align: left;
-        min-height: 170px;
+.hidden {
+display: none;
 }
     
-    
-        .marketing {
+.divider {
+border-top: 1px solid #3d3556;
+border-left: 0px solid transparent !important;
+border-right: 0px solid transparent !important;
+border-bottom: 0px solid transparent !important;
 background: #28044A;
-          text-align: center;
-              height: 40px;
-    padding-top: 20px;
+border-radius: 0px 0px 12px 12px;
+text-align: left;
+min-height: 170px;
 }
     
-    .imgitem {
-    background: transparent;
-      border-radius: 12px;
-          text-align: center;
-      min-height: 180px;
-      max-height: 180px;
-      
+    
+.marketing {
+background: #28044A;
+text-align: center;
+height: 40px;
+padding-top: 20px;
+}
+    
+.imgitem {
+background: transparent;
+border-radius: 12px;
+text-align: center;
+min-height: 180px;
+max-height: 180px;
 }
     
 .imgpopular {
-          text-align: center;
-      min-height: 19px;
-      max-height: 19px;
-  margin-top: 20px;
-    margin-left: 5px;
-      
+text-align: center;
+min-height: 19px;
+max-height: 19px;
+margin-top: 20px;
+margin-left: 5px;    
 }
     
         
@@ -441,10 +440,10 @@ background: #28044A;
     
 
     .navbtn {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 13px;
     border: 1px solid #370c5f;
     border-radius: 12px;
     background: #300954;
@@ -454,8 +453,24 @@ background: #28044A;
     white-space: nowrap;
     cursor: pointer !important;
     color: #fff !important;
-    margin-right: 10px;
+    margin-right: 7px;
+      text-decoration: none;
+      margin-top: 28px;
+      display: block;
+    width: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 30px;
 }
+    
+    
+    
+        .navbtn:hover {
+box-shadow: 0 0 0px 4px #008eff38;
+              transition-duration: 0s;
+}
+    
+    
     
 .cost {
 font-weight: 500;
