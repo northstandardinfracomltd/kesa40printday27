@@ -199,11 +199,11 @@
             display: inline-block;
           margin-left: auto;
           margin-right: auto;
-          margin-top: 13px;
-          margin-bottom: 13px;
           font-family: "senseistandard" !important;
           font-weight: 500;
           color: black;
+          margin-top: 22px;
+    margin-bottom: 22px;
         }
 
 .custom-input input {
@@ -272,14 +272,18 @@ cursor: pointer;
 user-select: none;
 text-align: left;
 display: flex;
-border-radius: 14px;
+  background-color: #28044A;
+border-radius: 12px;
 padding-left: 14px;
 padding-right: 14px;
+  border: 1px solid #28044A;
+
         }
 
-        .dropdown-item:hover {
-            background-color: #f0f0f0;
-        }
+.dropdown-item:hover {
+background-color: #300954;
+border: 1px solid #370c5f;
+}
 
 
         .lancelot {
@@ -460,15 +464,18 @@ text-decoration: none;
 padding: 10px 1px 0px 1px !important;
 margin-top: 20px !important;
 cursor: default;
-  
-  
-          font-size: 18px !important;
+font-size: 18px !important;
     font-family: "senseistandard" !important;
     color: #c8c1de;
     letter-spacing: 0px !important;
     line-height: 28px;
     cursor: default;
     text-align: left;
+}
+    
+    
+        .centerflex {
+      text-align: center !important;
 }
     
     
@@ -594,21 +601,21 @@ font-size: 15px;
     
     
     </div>
-    <div>
+    <div class="centerflex">
     
     
 
 <div class="custom-input" id="customInput" onmouseover="showDropdown()" onmouseout="hideDropdown()">
     <input type="text" placeholder="Démo" oninput="filterResults()" id="inputField" onclick="showDropdown()">
     <div class="dropdown" id="dropdown">
-        <div class="dropdown-item" onclick="addItem('crabe')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Panneau PVC</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('orange')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Rond de Liège</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('bleu')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Livret</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('ordinateur')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Chevalet</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('veste')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Aménagement</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('vélo')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Covering</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('skate')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Facing</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('favoris')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Logo</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/Popular.svg?v=1703191009110" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('crabe')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Panneau PVC</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PopularKesakoPrint.svg?v=1703327805787" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('orange')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Rond de Liège</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PopularKesakoPrint.svg?v=1703327805787" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('bleu')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Livret</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PopularKesakoPrint.svg?v=1703327805787" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('ordinateur')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Chevalet</p><img src="https://cdn.glitch.global/9346fc7c-a6" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('veste')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Aménagement</p><img src="https://cdn.glitch.global/9346fc7c-a63" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('vélo')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Covering</p><img src="https://cdn.glitch.global/9346fc7c-a6370" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('skate')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Facing</p><img src="https://cdn.glitch.global/9346fc7c-a637" class="imgpopular"></div>
+        <div class="dropdown-item" onclick="addItem('favoris')"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/983273293823.png?v=1703192084690" class="imgicon"><p class="itempopular" >Logo</p><img src="https://cdn.glitch.global/9346fc7c-" class="imgpopular"></div>
     </div>
 </div>
 <script>
