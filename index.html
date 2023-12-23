@@ -201,59 +201,80 @@
           margin-right: auto;
           margin-top: 13px;
           margin-bottom: 13px;
-          font-family: "norte1" !important;
+          font-family: "senseistandard" !important;
           font-weight: 500;
           color: black;
         }
 
-        .custom-input input {
+.custom-input input {
 max-width: 400px;
 width: 100%;
 min-width: 400px;
-padding: 10px;
 border: 2px solid #7CF178;
 border-radius: 12px;
 outline: none;
-          background: #28044A;
+background: #28044A;
 margin-left: auto;
-font-family: "norte1" !important;
+font-family: "senseistandard" !important;
 margin-right: auto;
 font-weight: 500;
 color: black;
-height: 30px;
-box-shadow: 0 112px 228px rgba(55,73,81,.12),0 25.0167px 50.9268px rgba(55,73,81,.0715),0 7.4481px 15.1622px rgba(55,73,81,.0485);
-        }
+letter-spacing: 0px;
+height: 38px;
+text-align: center;
+padding: 9px 10px 10px 10px !important;
+}
+    
+input[type="text"]::placeholder {
+color: #fff;
+letter-spacing: 0px;
+font-size: 18px;
+font-family: "senseistandard";
+white-space: nowrap;
+letter-spacing: 0px;
+margin-left: 0px;
+}   
+    
+input[type="text"] {
+color: #fff;
+font-size: 18px;
+font-family: "senseistandard";
+white-space: nowrap;
+letter-spacing: 0px;
+margin-left: 0px;
+}
     
   
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-          min-width: 400px;
-            max-width: 400px;
-          width: 100%;
-          margin-top: 0px;
-          padding: 10px;
-            border: 2px solid #7CF178;
-            border-top: none;
-            border-radius: 0px 0px 12px 12px;
-            background-color: #28044A;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1;
-          box-shadow: 0 112px 228px rgba(55,73,81,.12),0 25.0167px 50.9268px rgba(55,73,81,.0715),0 7.4481px 15.1622px rgba(55,73,81,.0485);
+.dropdown {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+min-width: 400px;
+max-width: 400px;
+width: 100%;
+margin-top: 0px;
+padding: 10px;
+border: 2px solid #7CF178;
+border-top: none;
+border-radius: 0px 0px 12px 12px;
+background-color: #28044A;
+z-index: 1;
         }
 
-        .dropdown-item {
-            padding: 0px;
-            cursor: pointer;
-            user-select: none;
-          color: black;
-              text-align: left;
-          display: flex;
-          border-radius: 14px;
-          padding-left: 14px;
-          padding-right: 14px;
+.dropdown-item {
+color: #fff;
+font-size: 18px;
+font-family: "senseistandard" !important;
+white-space: nowrap;
+letter-spacing: 0px;
+cursor: pointer;
+user-select: none;
+text-align: left;
+display: flex;
+border-radius: 14px;
+padding-left: 14px;
+padding-right: 14px;
         }
 
         .dropdown-item:hover {
@@ -371,9 +392,8 @@ margin-top: 4px;
 .description {
 font-weight: 500;
 margin-top: -15px;
-margin-bottom: 20px;
 margin-left: 2px;
-  
+  margin-bottom: 28px;
         font-size: 18px !important;
     font-family: "senseistandard" !important;
     color: #c8c1de;
@@ -643,46 +663,46 @@ font-size: 15px;
 
   
   <main>
-<div class="lancelot" id="result1"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result2"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result3"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result4"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result5"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result6"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result7"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result8"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result9"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result10"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result11"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result12"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result13"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result14"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result15"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result16"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result17"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result18"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result19"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result20"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result21"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result22"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result23"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result24"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result25"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result26"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result27"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result28"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result29"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result30"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result31"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result32"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result33"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result34"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result35"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result36"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result37"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result38"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result39"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
-<div class="lancelot" id="result40"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result1"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result2"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result3"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result4"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result5"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result6"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result7"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result8"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result9"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result10"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result11"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result12"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result13"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result14"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result15"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result16"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result17"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result18"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result19"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result20"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result21"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Vélo</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result22"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result23"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result24"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result25"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result26"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result27"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result28"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result29"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result30"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result31"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Plan</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result32"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Favoris ULT</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result33"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result34"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Mixage orange crème</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result35"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Crabe</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result36"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Ciel</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result37"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Orange</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result38"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Tandem</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result39"><img src="image2jpg" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
+<div class="lancelot" id="result40"><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/stsmall507x507-pad600x600f8f8f88.png?v=1703196325456" class="imgitem"><div class="divider"><p class="title" >Titre</p><p class="description" >Description</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £10</a></div></div>
 
   
   </main>
