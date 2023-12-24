@@ -204,6 +204,8 @@
           color: black;
           margin-top: 22px;
     margin-bottom: 22px;
+                opacity: 0;  
+            transition: opacity 0.5s ease; 
         }
 
 .custom-input input {
@@ -387,6 +389,10 @@ margin-left: 5px;
     .itempopular {
       font-size: 18px;
       padding-bottom: 0px;
+          padding-left: 9px;
+       padding-right: 9px
+         ;
+      margin-right: -8px;
       
 }
            #inputField {
@@ -865,23 +871,9 @@ text-decoration: none;
     });
   </script>
      
-     
-     
-       <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var divIds = ['examplediv1']; // Ajoutez les ID des images ici
 
-      divIds.forEach(function(divId) {
-        var div = document.getElementById(divId);
-        div.classList.add('blur');
-
-        setTimeout(function() {
-          div.classList.remove('blur');
-        }, 8000);
-      });
-    });
-  </script>
      
+
 
 
      
@@ -1020,7 +1012,18 @@ text-decoration: none;
      
 
 
-          
+            <script>
+    // Sélection de l'élément avec la classe .custom-input
+    var customInput = document.querySelector('.custom-input');
+
+    // Fonction pour changer l'opacité après 3 secondes
+    function changerOpacite() {
+      customInput.style.opacity = 1; // Changer l'opacité à 1
+    }
+
+    // Appeler la fonction après 3 secondes (3000 millisecondes)
+    setTimeout(changerOpacite, 1000);
+  </script>
           
   <script>
     // Fonction pour afficher la div en douceur après 16 secondes
