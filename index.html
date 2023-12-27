@@ -298,6 +298,7 @@ padding: 0px;
 border: 1.2px solid #3d3556;
 border-radius: 12px;
 background: #28044A;
+cursor: pointer;
 }
     
     
@@ -306,6 +307,7 @@ background: #28044A;
 transform: scale(1.03);
 transition-duration: 0s;
 box-shadow: 0 0 0px 4px #008eff38;
+cursor: pointer;
 }
 
 .hidden {
@@ -423,7 +425,7 @@ margin-top: 4px;
     color: #7CF178;
     letter-spacing: 0px !important;
     line-height: 28px;
-    cursor: default;
+    cursor: pointer;
     text-align: left;
     padding: 0px !important;
 }
@@ -438,7 +440,7 @@ margin-left: 2px;
     color: #c8c1de;
     letter-spacing: 0px !important;
     line-height: 28px;
-    cursor: default;
+    cursor: pointer;
     text-align: left;
     padding: 0px !important;
 }
@@ -456,7 +458,7 @@ margin-left: 2px;
     color: #fbe784a6;
     letter-spacing: 0px !important;
     line-height: 28px;
-    cursor: default;
+    cursor: pointer;
     text-align: left;
     padding: 0px !important;
 }
@@ -534,7 +536,7 @@ background: #0ca37f;
 text-decoration: none;
 padding: 8px 13px 8px 12px !important;
   margin-top: 20px !important;
-cursor: default;
+cursor: pointer;
 font-size: 18px !important;
     font-family: "senseistandard" !important;
     color: #fff;
@@ -815,6 +817,33 @@ text-decoration: none;
     </div>
   </header>
 <br><br><br>
+     
+<script>
+    // Attendez que le DOM soit chargé
+    document.addEventListener("DOMContentLoaded", function () {
+        // Tableau contenant les IDs de vos divs
+        var divIds = [];
+
+        // Ajoutez les IDs de result1 à result35 dans le tableau
+        for (let i = 1; i <= 35; i++) {
+            divIds.push("result" + i);
+        }
+
+        // Boucle à travers les IDs et ajoutez les gestionnaires d'événements de clic
+        divIds.forEach(function (id) {
+            var lienDiv = document.getElementById(id);
+
+            // Ajoutez un gestionnaire d'événements de clic à la div
+            lienDiv.addEventListener("click", function () {
+                // Spécifiez le lien vers lequel vous souhaitez rediriger l'utilisateur
+                var lien = "https://www.votrelien.com"; // Remplacez par votre lien réel
+
+                // Redirection vers le lien
+                window.location.href = lien;
+            });
+        });
+    });
+</script>
   
   <main>
 <div class="lancelot" id="result1"><img id="exampleImage1" src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PrintKesako00001.png?v=1703438939825" class="imgitem"><div class="divider"><p class="title" >Doypack zip</p><p class="description" >De 13 cm à 31 cm<br>Aluminium ou film</p><a href="#" class="buybtn">Personnaliser</a><br><br><br><a href="#" class="cost">Dès £0.2</a><p class="marketplace" >Usine Kesako Netherlands</p></div></div>
@@ -856,6 +885,7 @@ text-decoration: none;
 
   
   </main>
+     
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var imageIds = ['exampleImage1', 'exampleImage2', 'exampleImage3', 'exampleImage4', 'exampleImage5', 'exampleImage6', 'exampleImage7', 'exampleImage8', 'exampleImage9', 'exampleImage10', 'exampleImage11', 'exampleImage12', 'exampleImage13', 'exampleImage14', 'exampleImage15', 'exampleImage16', 'exampleImage17', 'exampleImage18', 'exampleImage19', 'exampleImage20', 'exampleImage21', 'exampleImage22', 'exampleImage23', 'exampleImage24', 'exampleImage25', 'exampleImage26', 'exampleImage27', 'exampleImage28', 'exampleImage29', 'exampleImage30', 'exampleImage31', 'exampleImage32', 'exampleImage33', 'exampleImage34', 'exampleImage35', 'exampleImage36', 'exampleImage37', 'exampleImage38', 'exampleImage39', 'exampleImage40']; // Ajoutez les ID des images ici
