@@ -169,6 +169,17 @@
       z-index: 1111;
     }
 
+    
+      @media (min-width: 100px) and (max-width: 819px) {
+            header {
+      display: block;
+                    position: static;
+
+    }
+      }
+
+    
+    
     header div {
       flex: 1;
       padding: 0px;
@@ -187,6 +198,16 @@
     
     }
 
+
+      @media (min-width: 100px) and (max-width: 819px) {
+         main {
+      grid-template-columns: repeat(1, 1fr);
+    
+    }
+      }
+
+    
+    
     main div {
       border: 1px solid #ccc;
       padding: 20px;
@@ -226,6 +247,23 @@ height: 38px;
 text-align: center;
 padding: 9px 10px 10px 10px !important;
 }
+    
+    
+      @media (min-width: 100px) and (max-width: 819px) {
+       .custom-input input {
+max-width: 270px;
+width: 100%;
+min-width: 270px;
+}
+      }
+
+      @media (min-width: 100px) and (max-width: 819px) {
+     .centerflex3 {
+    text-align: center !important;
+}
+      }
+
+    
     
 input[type="text"]::placeholder {
 color: #fff;
@@ -557,7 +595,8 @@ font-size: 18px !important;
     
     
                 .centerflex3 {
-      text-align: left !important;
+      text-align: left;
+                  padding-bottom: 10px;
 }
     
     
@@ -570,6 +609,30 @@ max-width: 200px;
           padding-top: 39px;
     padding-left: 37px;
 }
+    
+    
+    
+      @media (min-width: 100px) and (max-width: 819px) {
+          .menulogo {
+max-width: 200px;
+      margin-right: auto !important;
+            margin-left: auto;
+      text-align: left !important;
+          padding-top: 42px;
+            padding-bottom: 10px;
+    padding-left: 0px;
+            padding-right: 0px;
+}
+      }
+    
+    
+      @media (min-width: 100px) and (max-width: 819px) {
+       .centerflex2 {
+    display: none;
+}
+      }
+
+
     
     
     .menulogo:hover {
@@ -667,6 +730,15 @@ max-width: 200px;
     margin-right: auto;
 }
 
+    
+      @media (min-width: 100px) and (max-width: 819px) {
+                     .explaindiv {
+    grid-template-columns: repeat(1, 1fr);
+}
+      }
+
+    
+    
     .explaincontent {
     display: block;
     margin: 10px;
@@ -783,7 +855,6 @@ text-decoration: none;
         <div class="dropdown-item" onclick="addItem('Autocollant')"><p class="itempopular" >Autocollant</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PopularKesakoPrint.svg?v=1703327805787" class="imgpopular"></div>
         <div class="dropdown-item" onclick="addItem('Flocage véhicule')"><p class="itempopular" >Flocage véhicule</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PopularKesakoPrint.svg?v=1703327805787" class="imgpopular"></div>
         <div class="dropdown-item" onclick="addItem('Présentoir comptoir')"><p class="itempopular" >Présentoir comptoir</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PopularKesakoPrint.svg?v=1703327805787" class="imgpopular"></div>
-        <div class="dropdown-item" onclick="addItem('Banderole vinyle')"><p class="itempopular" >Banderole vinyle</p><img src="https://cdn.glitch.global/9346fc7c-a637-4c43-b28a-353c20807782/PopularKesakoPrint.svg?v=1703327805787" class="imgpopular"></div>
     </div>
 </div>
 <script>
